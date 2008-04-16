@@ -1,0 +1,79 @@
+Win32-IPC version 1.06, released April 15, 2008
+
+The Win32-IPC modules provide access to the Win32 sychronization
+objects, which are (currently) documented at
+
+  http://msdn2.microsoft.com/en-us/library/ms686364(VS.85).aspx
+
+The supported sychronization objects and associated modules are:
+  Event     - Win32::Event
+  Mutex     - Win32::Mutex
+  Semaphore - Win32::Semaphore
+
+In addition, the Win32::ChangeNotify module provides access to
+directory change notifications, which let you monitor a specified
+directory tree for file modifications.  While not strictly a
+synchronization object, change notifications are often used in similar
+ways.
+
+
+
+INSTALLATION
+
+To install these modules, run the following commands:
+
+	perl Build.PL
+	Build
+	Build test
+	Build install
+
+
+
+DEPENDENCIES
+
+You'll need a suitable C compiler.
+Microsoft Visual C++ 6 or MinGW GCC should work.
+You can also build it with GCC under Cygwin.
+
+
+
+CHANGES
+    Here's what's new in version 1.06 of Win32-IPC:
+    (See the file "Changes" for the full revision history.)
+
+	- *** INCOMPATIBLE CHANGE ***
+
+	  Passing undef as the value of an optional parameter is now
+	  the same as omitting that parameter.	In previous versions,
+	  undef was interpreted as either the empty string or 0 (along
+	  with a warning about "Use of uninitialized value...").
+
+	  In particular, if you pass undef as the timeout, it now
+	  means INFINITE, but to previous versions it meant 0.
+
+	- The modules now use XSLoader instead of DynaLoader.
+
+	- Copied Yves Orton's fix (from Win32::ChangeNotify 1.04) so
+	  "a true value" no longer has to be a non-zero number to all
+	  relevant places.
+
+	- Win32::IPC and its subclasses are now distributed separately
+	  from libwin32 (which has been broken up).  Prior to this
+	  release, each module had its own Changes file, and their
+	  version numbers were not synchronized.  Those files are
+	  appended below.
+
+
+
+COPYRIGHT AND LICENSE
+
+Copyright 1998-2008 Christopher J. Madsen
+
+ Created: 3 Feb 1998 from the ActiveWare version
+   (c) 1995 Microsoft Corporation. All rights reserved.
+       Developed by ActiveWare Internet Corp., http://www.ActiveState.com
+
+   Other modifications (c) 1997 by Gurusamy Sarathy <gsar@cpan.org>
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.

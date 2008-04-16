@@ -1,0 +1,44 @@
+---
+name: Win32-IPC
+version: 1.06
+author:
+  - 'Christopher J. Madsen <perl@cjmweb.net>'
+abstract: Use Win32 synchronization objects
+license: perl
+resources:
+  homepage: http://code.google.com/p/libwin32/
+  license: http://dev.perl.org/licenses/
+requires:
+  XSLoader: 0
+  perl: 5.6.0
+build_requires:
+  ExtUtils::CBuilder: 0.15
+  ExtUtils::ParseXS: 0
+  File::Spec: 0
+  FindBin: 0
+  Module::Build: 0.21
+  Test::More: 0
+dynamic_config: 0
+provides:
+  Win32::ChangeNotify:
+    file: lib/Win32/ChangeNotify.pm
+    version: 1.06
+  Win32::Event:
+    file: lib/Win32/Event.pm
+    version: 1.06
+  Win32::IPC:
+    file: lib/Win32/IPC.pm
+    version: 1.06
+  Win32::Mutex:
+    file: lib/Win32/Mutex.pm
+    version: 1.06
+  Win32::Semaphore:
+    file: lib/Win32/Semaphore.pm
+    version: 1.06
+generated_by: Module::Build version 0.28
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.2.html
+  version: 1.2
+no_index:
+  file:
+    - My_Build.pm
