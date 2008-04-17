@@ -1,6 +1,6 @@
 ---
 name: Win32-IPC
-version: 1.06
+version: 1.07
 author:
   - 'Christopher J. Madsen <perl@cjmweb.net>'
 abstract: Use Win32 synchronization objects
@@ -22,23 +22,23 @@ dynamic_config: 0
 provides:
   Win32::ChangeNotify:
     file: lib/Win32/ChangeNotify.pm
-    version: 1.06
+    version: 1.07
   Win32::Event:
     file: lib/Win32/Event.pm
-    version: 1.06
+    version: 1.07
   Win32::IPC:
     file: lib/Win32/IPC.pm
-    version: 1.06
+    version: 1.07
   Win32::Mutex:
     file: lib/Win32/Mutex.pm
-    version: 1.06
+    version: 1.07
   Win32::Semaphore:
     file: lib/Win32/Semaphore.pm
-    version: 1.06
+    version: 1.07
 generated_by: Module::Build version 0.28
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html
   version: 1.2
 no_index:
-  file:
-    - My_Build.pm
+  directory:
+    - tools

@@ -5,7 +5,7 @@ package My_Build;
 #
 # Author: Christopher J. Madsen <perl@cjmweb.net>
 # Created: 29 Feb 2008
-# $Id: My_Build.pm 256 2008-03-02 03:07:35Z cmadsn $
+# $Id: My_Build.pm 285 2008-04-17 02:36:34Z cmadsn $
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the same terms as Perl itself.
@@ -21,6 +21,7 @@ package My_Build;
 use strict;
 use warnings;
 use File::Spec ();
+use Module::Build ();
 
 # Use Module::Build::DistVersion if we can get it:
 BEGIN {
@@ -32,7 +33,7 @@ BEGIN {
 #=====================================================================
 # Package Global Variables:
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #=====================================================================
 sub ACTION_distdir

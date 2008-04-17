@@ -1,4 +1,4 @@
-Win32-IPC version 1.06, released April 15, 2008
+Win32-IPC version 1.07, released April 16, 2008
 
 The Win32-IPC modules provide access to the Win32 sychronization
 objects, which are (currently) documented at
@@ -38,9 +38,19 @@ You can also build it with GCC under Cygwin.
 
 
 CHANGES
-    Here's what's new in version 1.06 of Win32-IPC:
+    Here's what's new in version 1.07 of Win32-IPC:
     (See the file "Changes" for the full revision history.)
 
+	- There are no significant functional changes in 1.07.	If
+	  you've already installed 1.06, don't bother upgrading.
+
+	- Give a more useful error message if Module::Build is not installed
+
+	- Don't bother to test $! after fetching constant('INFINITE')
+
+	- Added LICENSE AND COPYRIGHT section to documentation
+
+1.06  April 15, 2008
 	- *** INCOMPATIBLE CHANGE ***
 
 	  Passing undef as the value of an optional parameter is now

@@ -10,7 +10,7 @@ package Win32::IPC;
 #   Other modifications (c) 1997 by Gurusamy Sarathy <gsar@cpan.org>
 #
 # Author: Christopher J. Madsen <perl@cjmweb.net>
-# $Id: IPC.pm 256 2008-03-02 03:07:35Z cmadsn $
+# $Id: IPC.pm 284 2008-04-17 02:17:41Z cmadsn $
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the same terms as Perl itself.
@@ -29,7 +29,7 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 
 BEGIN
 {
-  $VERSION = '1.06';
+  $VERSION = '1.07';
 
   require Exporter;
   @ISA       = qw( Exporter );
@@ -41,7 +41,6 @@ BEGIN
 
   # Generate INFINITE constant function:
   my $INFINITE = constant('INFINITE');
-  die "Our DLL does not define INFINITE" if $! != 0;
   eval "sub INFINITE () { $INFINITE } 1" or die;
 } # end BEGIN bootstrap
 
@@ -65,7 +64,7 @@ Win32::IPC - Base class for Win32 synchronization objects
 
 =head1 VERSION
 
-This document describes version 1.06 of Win32::IPC, released April 15, 2008 as part of Win32-IPC version 1.06.
+This document describes version 1.07 of Win32::IPC, released April 16, 2008 as part of Win32-IPC version 1.07.
 
 
 =head1 SYNOPSIS
@@ -224,6 +223,21 @@ L<http://rt.cpan.org/Public/Bug/Report.html?Queue=Win32-IPC>
 
 Loosely based on the original module by ActiveWare Internet Corp.,
 L<http://www.ActiveState.com>
+
+
+=head1 LICENSE AND COPYRIGHT
+
+Copyright 1998-2008 Christopher J. Madsen
+
+Created: 3 Feb 1998 from the ActiveWare version
+  (c) 1995 Microsoft Corporation. All rights reserved.
+      Developed by ActiveWare Internet Corp., http://www.ActiveState.com
+
+  Other modifications (c) 1997 by Gurusamy Sarathy <gsar@cpan.org>
+
+This module is free software; you can redistribute it and/or
+modify it under the same terms as Perl itself. See L<perlartistic>.
+
 
 =head1 DISCLAIMER OF WARRANTY
 

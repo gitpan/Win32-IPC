@@ -1,4 +1,4 @@
-[% # $Id: README.tt 256 2008-03-02 03:07:35Z cmadsn $ %]
+[% # $Id: README.tt 281 2008-04-17 00:20:17Z cmadsn $ %]
 Win32-IPC version [%version%], released [%date%]
 
 
