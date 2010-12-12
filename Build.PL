@@ -1,9 +1,8 @@
 #! /usr/bin/perl
 #---------------------------------------------------------------------
-# $Id: Build.PL 285 2008-04-17 02:36:34Z cmadsn $
-# Copyright 2008 Christopher J. Madsen
-#
 # Build.PL for Win32::IPC
+#
+# Copyright 2010 Christopher J. Madsen
 #---------------------------------------------------------------------
 
 use strict;
@@ -25,23 +24,22 @@ my $builder = My_Build->new(
   dist_abstract       => 'Use Win32 synchronization objects',
   dist_author         => 'Christopher J. Madsen <perl@cjmweb.net>',
   dist_version_from   => 'lib/Win32/IPC.pm',
-  requires => {
-    perl                 => '5.6.0',
-    XSLoader             => 0,
-  },
-  build_requires => {
-    'File::Spec'         => 0,
-    'FindBin'            => 0,
-    'Module::Build'      => '0.21',
-    'ExtUtils::ParseXS'  => 0, # Had problems with 5.8.8's xsubpp
+  add_to_cleanup      => ['vc*.pdb'],
+  # Prerequisites inserted by DistZilla:
+  'build_requires' => {
     'ExtUtils::CBuilder' => '0.15',
-    'Test::More'         => 0,
+    'ExtUtils::ParseXS' => '0',
+    'File::Spec' => '0',
+    'FindBin' => '0',
+    'Module::Build' => '0.21',
+    'Test::More' => '0.88'
   },
-  create_makefile_pl => 'passthrough',
-  dynamic_config     => 0,
-  meta_merge         => {
-    no_index  => { directory => [ 'tools' ] },
-    resources => { homepage => 'http://code.google.com/p/libwin32/' },
+  'configure_requires' => {
+    'Module::Build' => '0.21'
+  },
+  'requires' => {
+    'XSLoader' => '0',
+    'perl' => '5.006'
   },
 );
 

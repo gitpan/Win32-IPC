@@ -1,4 +1,5 @@
-Win32-IPC version 1.07, released April 16, 2008
+Win32-IPC version 1.08, released December 11, 2010
+
 
 The Win32-IPC modules provide access to the Win32 sychronization
 objects, which are (currently) documented at
@@ -22,10 +23,10 @@ INSTALLATION
 
 To install these modules, run the following commands:
 
-	perl Build.PL
-	Build
-	Build test
-	Build install
+    perl Build.PL
+    ./Build
+    ./Build test
+    ./Build install
 
 
 
@@ -35,49 +36,28 @@ You'll need a suitable C compiler.
 Microsoft Visual C++ 6 or MinGW GCC should work.
 You can also build it with GCC under Cygwin.
 
+  Package   Minimum Version
+  --------- ---------------
+  perl       5.006
+  XSLoader
+
 
 
 CHANGES
-    Here's what's new in version 1.07 of Win32-IPC:
+    Here's what's new in version 1.08 of Win32-IPC:
     (See the file "Changes" for the full revision history.)
 
-	- There are no significant functional changes in 1.07.	If
-	  you've already installed 1.06, don't bother upgrading.
+	- Localize $@ when using eval
 
-	- Give a more useful error message if Module::Build is not installed
+	- Includes a CPAN Meta v2 META.json file.
 
-	- Don't bother to test $! after fetching constant('INFINITE')
-
-	- Added LICENSE AND COPYRIGHT section to documentation
-
-1.06  April 15, 2008
-	- *** INCOMPATIBLE CHANGE ***
-
-	  Passing undef as the value of an optional parameter is now
-	  the same as omitting that parameter.	In previous versions,
-	  undef was interpreted as either the empty string or 0 (along
-	  with a warning about "Use of uninitialized value...").
-
-	  In particular, if you pass undef as the timeout, it now
-	  means INFINITE, but to previous versions it meant 0.
-
-	- The modules now use XSLoader instead of DynaLoader.
-
-	- Copied Yves Orton's fix (from Win32::ChangeNotify 1.04) so
-	  "a true value" no longer has to be a non-zero number to all
-	  relevant places.
-
-	- Win32::IPC and its subclasses are now distributed separately
-	  from libwin32 (which has been broken up).  Prior to this
-	  release, each module had its own Changes file, and their
-	  version numbers were not synchronized.  Those files are
-	  appended below.
+	- The passthrough Makefile.PL has been removed.
 
 
 
 COPYRIGHT AND LICENSE
 
-Copyright 1998-2008 Christopher J. Madsen
+Copyright 1998-2010 Christopher J. Madsen
 
  Created: 3 Feb 1998 from the ActiveWare version
    (c) 1995 Microsoft Corporation. All rights reserved.

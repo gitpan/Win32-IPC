@@ -1,4 +1,4 @@
-# $Id: typemap 245 2008-02-23 23:23:27Z cmadsn $
+# $Id: typemap 245 2008-02-23 17:23:27 -0600 cmadsn $
 
 BOOL                    T_IV
 TRUEFALSE               T_TRUEFALSE
