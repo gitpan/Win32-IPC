@@ -1,4 +1,4 @@
-Win32-IPC version 1.08, released December 11, 2010
+Win32-IPC version 1.09, released January 14, 2012
 
 
 The Win32-IPC modules provide access to the Win32 sychronization
@@ -39,25 +39,28 @@ You can also build it with GCC under Cygwin.
   Package   Minimum Version
   --------- ---------------
   perl       5.006
+  Carp       
+  Exporter   
   XSLoader
 
 
 
 CHANGES
-    Here's what's new in version 1.08 of Win32-IPC:
+    Here's what's new in version 1.09 of Win32-IPC:
     (See the file "Changes" for the full revision history.)
 
-	- Localize $@ when using eval
+	- There are no functional changes in 1.09.
 
-	- Includes a CPAN Meta v2 META.json file.
+	- Document incompatibility with signal handlers.
 
-	- The passthrough Makefile.PL has been removed.
+	- The tools directory has been renamed inc for consistency
+	  with other CPAN distributions.
 
 
 
 COPYRIGHT AND LICENSE
 
-Copyright 1998-2010 Christopher J. Madsen
+Copyright 1998-2012 Christopher J. Madsen
 
  Created: 3 Feb 1998 from the ActiveWare version
    (c) 1995 Microsoft Corporation. All rights reserved.

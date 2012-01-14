@@ -8,17 +8,13 @@
 use strict;
 use warnings;
 
-# Make sure we're using My_Build from our distribution:
-use FindBin;
-use lib "$FindBin::Bin/tools";
-
-use My_Build;          # Our customized version of Module::Build
+use inc::My_Build;           # Our customized version of Module::Build
 
 unless ($^O eq "MSWin32" || $^O eq "cygwin") {
   die "OS unsupported\n";
 }
 
-my $builder = My_Build->new(
+my $builder = inc::My_Build->new(
   dist_name           => 'Win32-IPC',
   license             => 'perl',
   dist_abstract       => 'Use Win32 synchronization objects',
@@ -30,14 +26,17 @@ my $builder = My_Build->new(
     'ExtUtils::CBuilder' => '0.15',
     'ExtUtils::ParseXS' => '0',
     'File::Spec' => '0',
-    'FindBin' => '0',
     'Module::Build' => '0.21',
     'Test::More' => '0.88'
   },
   'configure_requires' => {
-    'Module::Build' => '0.21'
+    'File::Spec' => '0',
+    'Module::Build' => '0.21',
+    'base' => '0'
   },
   'requires' => {
+    'Carp' => '0',
+    'Exporter' => '0',
     'XSLoader' => '0',
     'perl' => '5.006'
   },
