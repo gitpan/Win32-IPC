@@ -1,4 +1,4 @@
-Win32-IPC version 1.09, released January 14, 2012
+Win32-IPC version 1.10, released August 30, 2014
 
 
 The Win32-IPC modules provide access to the Win32 sychronization
@@ -38,7 +38,7 @@ You can also build it with GCC under Cygwin.
 
   Package   Minimum Version
   --------- ---------------
-  perl       5.006
+  perl       5.6.0
   Carp       
   Exporter   
   XSLoader
@@ -46,21 +46,18 @@ You can also build it with GCC under Cygwin.
 
 
 CHANGES
-    Here's what's new in version 1.09 of Win32-IPC:
+    Here's what's new in version 1.10 of Win32-IPC:
     (See the file "Changes" for the full revision history.)
 
-	- There are no functional changes in 1.09.
+	- There are no functional changes in 1.10.
 
-	- Document incompatibility with signal handlers.
-
-	- The tools directory has been renamed inc for consistency
-	  with other CPAN distributions.
+	- Release tests moved to xt/
 
 
 
 COPYRIGHT AND LICENSE
 
-Copyright 1998-2012 Christopher J. Madsen
+Copyright 1998-2014 Christopher J. Madsen
 
  Created: 3 Feb 1998 from the ActiveWare version
    (c) 1995 Microsoft Corporation. All rights reserved.

@@ -94,8 +94,8 @@ Win32::ChangeNotify - Monitor events related to files and directories
 =head1 VERSION
 
 This document describes version 1.09 of
-Win32::ChangeNotify, released January 14, 2012
-as part of Win32-IPC version 1.09.
+Win32::ChangeNotify, released August 30, 2014
+as part of Win32-IPC version 1.10.
 
 =head1 SYNOPSIS
 
@@ -236,14 +236,14 @@ or through the web interface at
 L<< http://rt.cpan.org/Public/Bug/Report.html?Queue=Win32-IPC >>.
 
 You can follow or contribute to Win32-IPC's development at
-L<< http://github.com/madsen/win32-ipc >>.
+L<< https://github.com/madsen/win32-ipc >>.
 
 Loosely based on the original module by ActiveWare Internet Corp.,
 L<http://www.ActiveState.com>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 1998-2012 Christopher J. Madsen
+Copyright 1998-2014 Christopher J. Madsen
 
 Created: 3 Feb 1998 from the ActiveWare version
   (c) 1995 Microsoft Corporation. All rights reserved.

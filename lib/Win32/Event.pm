@@ -46,8 +46,8 @@ Win32::Event - Use Win32 event objects from Perl
 =head1 VERSION
 
 This document describes version 1.09 of
-Win32::Event, released January 14, 2012
-as part of Win32-IPC version 1.09.
+Win32::Event, released August 30, 2014
+as part of Win32-IPC version 1.10.
 
 =head1 SYNOPSIS
 
@@ -153,11 +153,11 @@ or through the web interface at
 L<< http://rt.cpan.org/Public/Bug/Report.html?Queue=Win32-IPC >>.
 
 You can follow or contribute to Win32-IPC's development at
-L<< http://github.com/madsen/win32-ipc >>.
+L<< https://github.com/madsen/win32-ipc >>.
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Christopher J. Madsen.
+This software is copyright (c) 2014 by Christopher J. Madsen.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
