@@ -28,7 +28,7 @@ use warnings;
 
 BEGIN
 {
-  our $VERSION = '1.10';
+  our $VERSION = '1.11';
   # This file is part of {{$dist}} {{$dist_version}} ({{$date}})
 
   require Exporter;
@@ -63,9 +63,9 @@ Win32::IPC - Base class for Win32 synchronization objects
 
 =head1 VERSION
 
-This document describes version 1.10 of
-Win32::IPC, released August 30, 2014
-as part of Win32-IPC version 1.10.
+This document describes version 1.11 of
+Win32::IPC, released November 15, 2014
+as part of Win32-IPC version 1.11.
 
 =head1 SYNOPSIS
 

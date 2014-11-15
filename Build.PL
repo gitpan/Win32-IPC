@@ -32,6 +32,7 @@ my $builder = inc::My_Build->new(
   'configure_requires' => {
     'File::Spec' => '0',
     'Module::Build' => '0.21',
+    'Module::Metadata' => '0',
     'base' => '0'
   },
   'requires' => {

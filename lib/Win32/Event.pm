@@ -46,8 +46,8 @@ Win32::Event - Use Win32 event objects from Perl
 =head1 VERSION
 
 This document describes version 1.09 of
-Win32::Event, released August 30, 2014
-as part of Win32-IPC version 1.10.
+Win32::Event, released November 15, 2014
+as part of Win32-IPC version 1.11.
 
 =head1 SYNOPSIS
 

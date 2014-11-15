@@ -56,8 +56,8 @@ Win32::Mutex - Use Win32 mutex objects from Perl
 =head1 VERSION
 
 This document describes version 1.09 of
-Win32::Mutex, released August 30, 2014
-as part of Win32-IPC version 1.10.
+Win32::Mutex, released November 15, 2014
+as part of Win32-IPC version 1.11.
 
 =head1 SYNOPSIS
 

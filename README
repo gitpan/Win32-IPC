@@ -1,4 +1,4 @@
-Win32-IPC version 1.10, released August 30, 2014
+Win32-IPC version 1.11, released November 15, 2014
 
 
 The Win32-IPC modules provide access to the Win32 sychronization
@@ -46,12 +46,13 @@ You can also build it with GCC under Cygwin.
 
 
 CHANGES
-    Here's what's new in version 1.10 of Win32-IPC:
+    Here's what's new in version 1.11 of Win32-IPC:
     (See the file "Changes" for the full revision history.)
 
-	- There are no functional changes in 1.10.
+	- There are no functional changes in 1.11.
 
-	- Release tests moved to xt/
+	- Change build process to use Module::Metadata instead of deprecated
+	  Module::Build::ModuleInfo (Klaus Eichner, GitHub#1)
 
 
 
